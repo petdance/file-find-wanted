@@ -6,13 +6,11 @@ File::Find::Wanted - More obvious wrapper around File::Find
 
 =head1 VERSION
 
-Version 0.01
-
-    $Header: /home/cvs/file-find-wanted/Wanted.pm,v 1.4 2004/08/06 04:39:43 andy Exp $
+Version 1.00
 
 =cut
 
-our $VERSION = "0.01";
+our $VERSION = '1.00';
 
 use strict;
 use File::Find;
@@ -23,10 +21,11 @@ our @EXPORT = qw( find_wanted );
 =head1 SYNOPSIS
 
 File::Find is a great module, except that it doesn't actually find
-anything.  Its C<find()> function walks a directory tree and calls a callback function.
-Unfortunately, the callback function is deceptively called C<wanted>,
-which implies that it should return a boolean saying whether you
-want the file.  That's not how it works.
+anything.  Its C<find()> function walks a directory tree and calls
+a callback function.  Unfortunately, the callback function is
+deceptively called C<wanted>, which implies that it should return
+a boolean saying whether you want the file.  That's not how it
+works.
 
 Most of the time you call C<find()>, you just want to build a list
 of files.  There are other modules that do this for you, most notably
@@ -80,5 +79,14 @@ sub find_wanted {
 
     return @files;
 }
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2005-2012 Andy Lester.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the Artistic License v2.0.
+
+=cut
 
 1;
