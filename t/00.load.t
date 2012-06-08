@@ -2,8 +2,10 @@
 
 use Test::More tests => 1;
 
-BEGIN {
-    use_ok( 'File::Find::Wanted' );
-}
+use File::Find::Wanted;
 
-diag( "Testing File::Find::Wanted $File::Find::Wanted::VERSION" );
+diag( "Testing File::Find::Wanted $File::Find::Wanted::VERSION, Perl $], $^X" );
+
+pass( 'All modules loaded' );
+
+done_testing();
