@@ -26,6 +26,7 @@ if ( $ExtUtils::MakeMaker::VERSION ge '6.46' ) {
         resources => {
             bugtracker  => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=File-Find-Wanted',
             license     => 'http://www.opensource.org/licenses/artistic-license-2.0.php',
+            repository  => 'https://github.com/petdance/file-find-wanted',
         }
     };
 }
